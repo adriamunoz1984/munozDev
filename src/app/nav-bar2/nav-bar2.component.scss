@@ -1,0 +1,222 @@
+//Create Variables and Mixins here
+
+$arrow-size: 1.75vw;
+$arrow-color:  #404040;
+$arrow-hover: #595959;
+$arrow-trans-time: 0.5s;
+//Declare variables and mixins here
+
+//Arrow and arrow leg main dimensions
+.arrow
+{
+  position: absolute;
+  z-index:5;
+}
+
+.leg
+{
+  height: 1vw ;
+  width: $arrow-size ;
+  border-radius: 0px;
+  background: red;
+  position: absolute;
+  z-index:5;
+  float: left;
+}
+//********************************
+
+//*******Arrow Legs
+
+.d-l-leg,
+.d-r-leg
+{
+  height: $arrow-size;
+  width: 1vw;
+}
+
+.d-t-leg,
+.d-r-leg,
+.d-l-leg,
+.d-b-leg,
+{
+  background: $arrow-color;
+}
+
+.d-t-leg
+{
+  top:4vw;
+  left: 11.6vw;
+}
+
+.d-b-leg
+{
+  top:10vw;
+  left: 11.6vw;
+}
+
+.d-l-leg
+{
+  left: 9vw;
+  top:6.65vw;
+}
+
+.d-r-leg
+{
+  left: 15vw;
+  top:6.65vw;
+}
+
+//******Hover Effects
+.top:hover .arrow
+{
+  border-bottom: $arrow-size solid $arrow-hover;
+  transition: border-bottom $arrow-trans-time;
+}
+
+.top:hover .leg
+{
+  background: $arrow-hover;
+  transition: background $arrow-trans-time;
+}
+
+.bottom:hover .arrow
+{
+  border-top: $arrow-size solid $arrow-hover;
+  transition: border-bottom $arrow-trans-time;
+}
+.bottom:hover .leg
+{
+  background: $arrow-hover;
+  transition: background $arrow-trans-time;
+}
+
+.right:hover .arrow
+{
+  border-left: $arrow-size solid $arrow-hover;
+  transition: border-bottom $arrow-trans-time;
+}
+
+.right:hover .leg
+{
+  background: $arrow-hover;
+  transition: background $arrow-trans-time;
+}
+
+.left:hover .arrow
+{
+  border-right: $arrow-size solid $arrow-hover;
+  transition: border-bottom $arrow-trans-time;
+}
+.left:hover .leg
+{
+  background: $arrow-hover;
+  transition: background $arrow-trans-time;
+}
+//*******************
+//**************Arrow selections
+.top .arrow
+{
+  width: 0;
+  height: 0;
+  border-left: $arrow-size solid transparent; /**fuck it use sass when you can**/
+  border-right: $arrow-size  solid transparent;
+  border-bottom: $arrow-size solid $arrow-color;
+  top:2.25vw;
+  left: 10.75vw;
+}
+
+.bottom .arrow
+{
+  width: 0;
+  height: 0;
+  border-left: $arrow-size  solid transparent;
+  border-right: $arrow-size  solid transparent;
+  border-top: $arrow-size  solid $arrow-color;
+  top:11vw;
+  left: 10.75vw;
+}
+
+.left .arrow
+{
+  width: 0;
+  height: 0;
+  border-top: $arrow-size  solid transparent;
+  border-bottom: $arrow-size solid transparent;
+  border-right:$arrow-size solid $arrow-color;
+  float: left;
+  left: 7.25vw;
+  top: 5.75vw;
+}
+
+.right .arrow
+{
+  width: 0;
+  height: 0;
+  border-top:$arrow-size  solid transparent;
+  border-bottom: $arrow-size solid transparent;
+  border-left:$arrow-size solid $arrow-color;
+  float: left;
+  left: 16vw;
+  top: 5.75vw;
+}
+
+center .d-center
+{
+  height: $arrow-size ;
+  width: $arrow-size ;
+  border-radius: 100px;
+  background: #404040;
+  position: absolute;
+  z-index:5;
+  float: left;
+  top:6.65vw;
+  left: 11.6vw;
+}
+//******************************
+
+//End ofTop arrow and arrow shaft
+
+//Bottom arrow and arrow shaft
+
+
+//End of Bottom arrow and arrow shaft
+
+//left arrow and arrow shaft
+
+//End of left arrow and arrow shaft
+
+//right arrow and arrow shaft
+
+//End of left arrow and arrow shaft
+
+.menu-item
+{
+  position: absolute;
+  font-family: "Petyka - Retro Computer___SHORT";
+  color: red;
+  font-size:2vw;
+}
+
+.ab
+{
+  top:1.75vw;
+  left:16vw;
+}
+
+.exper
+{
+  top:10.25vw;
+  left: 16vw;
+}
+
+.skill
+{
+  top:10.25vw;
+  left:-1vw;
+}
+
+.con
+{
+  top:1.75vw;
+  left:-2.75vw;
+}

@@ -1,0 +1,161 @@
+
+
+//Create Variables and Mixins here
+
+$arrow-size: 1.75vw;
+$arrow-color:  #404040;
+
+//Declare variables and mixins here
+
+
+.arrow
+{
+  position: absolute;
+  z-index:5;
+}
+
+
+.leg
+{
+  height: 1vw ;
+  width: $arrow-size ;
+  border-radius: 0px;
+  background: red;
+  position: absolute;
+  z-index:5;
+  float: left;
+}
+.d-l-leg,
+.d-r-leg
+{
+  height: $arrow-size;
+  width: 1vw;
+}
+
+.d-t-leg,
+.d-r-leg,
+.d-l-leg,
+.d-b-leg,
+{
+  background: $arrow-color;
+}
+
+//Top arrow and arrow shaft
+.d-t-leg
+{
+  top:4vw;
+  left: 11.6vw;
+}
+
+.top .arrow
+{
+  width: 0;
+  height: 0;
+  border-left: $arrow-size solid transparent; /**fuck it use sass when you can**/
+  border-right: $arrow-size  solid transparent;
+  border-bottom: $arrow-size solid $arrow-color;
+  top:2.25vw;
+  left: 10.75vw;
+}
+//End ofTop arrow and arrow shaft
+
+//Bottom arrow and arrow shaft
+.d-b-leg
+{
+  top:10vw;
+  left: 11.6vw;
+
+  border-left: 2.5vw solid transparent; /**fuck it use sass when you can**/
+  border-right: 2.5vw  solid transparent;
+  border-bottom: 2.5vw solid #404040;
+  top:1vw;
+  left: 10vw;
+
+}
+.bottom .arrow
+{
+  width: 0;
+  height: 0;
+
+  border-left: $arrow-size  solid transparent;
+  border-right: $arrow-size  solid transparent;
+  border-top: $arrow-size  solid $arrow-color;
+  top:11vw;
+  left: 10.75vw;
+}
+//End of Bottom arrow and arrow shaft
+
+//left arrow and arrow shaft
+.d-l-leg
+{
+  left: 9vw;
+  top:6.65vw;
+}
+
+  border-left: 2.5vw  solid transparent;
+  border-right: 2.5vw  solid transparent;
+  text-align:center;
+  border-top: 2.5vw  solid #404040;
+}
+
+.left .arrow
+{
+  width: 0;
+  height: 0;
+
+  border-top: $arrow-size  solid transparent;
+  border-bottom: $arrow-size solid transparent;
+  border-right:$arrow-size solid $arrow-color;
+  float: left;
+  left: 7.25vw;
+  top: 5.75vw;
+}
+//End of left arrow and arrow shaft
+
+//right arrow and arrow shaft
+.d-r-leg
+{
+  left: 15vw;
+  top:6.65vw;
+}
+
+  border-top: 2.5vw  solid transparent;
+  border-bottom: 2.5vw  solid transparent;
+  border-right:2.5vw  solid #404040;
+  float: left;
+  left: 0;
+}
+
+.right .arrow
+{
+  width: 0;
+  height: 0;
+
+  border-top:$arrow-size  solid transparent;
+  border-bottom: $arrow-size solid transparent;
+  border-left:$arrow-size solid $arrow-color;
+  float: left;
+  left: 16vw;
+  top: 5.75vw;
+}
+//End of left arrow and arrow shaft
+
+.center .d-center
+{
+  height: $arrow-size ;
+  width: $arrow-size ;
+  border-radius: 100px;
+  background: #404040;
+  position: absolute;
+  z-index:5;
+  float: left;
+  top:6.65vw;
+  left: 11.6vw;
+
+  border-top: 2.5vw  solid transparent;
+  border-bottom: 2.5vw  solid transparent;
+  border-left:2.5vw  solid #404040;
+  float: right;
+  right:0;
+
+}

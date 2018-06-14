@@ -1,0 +1,10 @@
+<div class="Buttons_section">
+ <div class="select_startBG">
+   <button type="button" role="button" class="select" [ngClass]="{onHover: selection === true}" (click)="onEnglish()" [disabled]="!butDis">{{varSelect}}</button>
+   <button type="button" role="button" class="start" [ngClass]="{onHover:  selection === true}" (click)="onSpanish()" [disabled]="!butDis">{{varStart}}</button>
+ </div>
+ <div class="Rounded_Rectangle_1">
+    <button class="SelectButton" (click)="onSelectClick()"></button>
+    <button class="StartButton"></button>
+  </div>
+</div>

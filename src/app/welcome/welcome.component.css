@@ -1,0 +1,53 @@
+.welcome
+{
+    /* height: 800px;
+    padding-top: 75px; */
+}
+.welcome .parallax-inner
+{
+  background: linear-gradient(#333333, #4c4c4c);
+   /* height: 750px; */
+}
+
+.space
+{
+  padding: 2vw;
+}
+
+.welcome .parallax-inner
+{
+  padding: 50px;
+}
+
+.welcome h2
+{
+    margin:0 auto;
+    font-family: "Petyka - Retro Computer___SHORT";
+    font-size: 5vw;
+    position:relative;
+    top:-11vw;
+    height: 10vw;
+    color:#ffffff;
+    text-shadow: 0.5vw 1vw 2vw rgba(0,0,0,0.9);
+    /* outline: 2px solid red; */
+}
+
+.welcome h2 span
+{
+  font-family: "Petyka - Retro Computer___SHORT";
+  font-size: 7vw;
+  position: relative;
+  top: 1vw;
+  /* color: #333333; */
+  color: black;
+}
+
+
+#munozlogo
+{
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  width: 20vw;
+  top: 5vw;
+}
